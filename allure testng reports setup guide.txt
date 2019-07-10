@@ -1,0 +1,14 @@
+
+
+download allure setup files e.g allure 2.9.0 and place in a directory of your choice eg root of the c: drive
+1. add allure bin to enviroment variable path
+ie system variable "path" e.g C:\allure-2.9.0\bin
+
+2. check on cmd line whetehr allure has been properly configured
+go to https://mvnrepository.com/artifact/io.qameta.allure/allure-testng to download the maven allure dependency
+-allure --version
+-if the version number displays then allure is configured properly
+3. run your test
+-copy property path from generated allure-result folder
+4 open cmd line
+type in- allure serve  space and paste in the copied directory and press enter to display the graphic generated report

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HomePg-Cont-Comp" parallel="false">
+    
+   <test name="HomePageTest" preserve-order="true">
+    <classes>
+      <class name="com.crmAutomation.testScripts.HomePageTest"/>
+    </classes>
+  </test> <!-- HomePageTest -->
+  
+  <test name="ContactsPgTest">
+    <classes>
+      <class name="com.crmAutomation.testScripts.ContactsPgTest"/>
+    </classes>
+  </test> <!-- ContactsPgTest -->
+  
+  <test name="CompaniesPageTest">
+    <classes>
+
+      <class name="com.crmAutomation.testScripts.CompaniesPageTest"/>
+    </classes>
+  </test> <!-- CompaniesPageTest -->
+</suite> <!-- HomePa-Cont-Comp -->

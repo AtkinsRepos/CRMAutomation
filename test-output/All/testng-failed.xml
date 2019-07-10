@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Sanity(failed)">
+    <classes>
+      <class name="com.crmAutomation.testScripts.HomePageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="verifyclickOnContactsPgLinkTest"/>
+          <include name="setUpSuite"/>
+          <include name="VerifylogOutOfApplication"/>
+        </methods>
+      </class> <!-- com.crmAutomation.testScripts.HomePageTest -->
+      <class name="com.crmAutomation.testScripts.LoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="validatecurrentUrlTest"/>
+          <include name="LoginToApplication"/>
+          <include name="setUpSuite"/>
+          <include name="verifyHomepageTitleTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.crmAutomation.testScripts.LoginTest -->
+    </classes>
+  </test> <!-- Sanity(failed) -->
+</suite> <!-- Failed suite [All] -->

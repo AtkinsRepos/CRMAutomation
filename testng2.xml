@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="functional1" parallel="false">
+    
+   <test name="LoginTest" preserve-order="true">
+    <classes>
+      <class name="com.crmAutomation.testScripts.LoginTest"/>
+    </classes>
+  </test> <!-- LoginTest -->
+  
+  <test name="HomePageTest">
+    <classes>
+      <class name="com.crmAutomation.testScripts.HomePageTest"/>
+    </classes>
+  </test> <!-- HomePageTest -->
+  
+</suite> <!-- functional1 -->

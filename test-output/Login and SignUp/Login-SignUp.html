@@ -1,0 +1,324 @@
+<html>
+<head>
+<title>TestNG:  Login-SignUp</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Login-SignUp</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>30/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed May 15 16:23:57 BST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>881 seconds (881499 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.crmAutomation.testScripts.ValidSignUpPageTest.validateSignUpTest()'><b>validateSignUpTest</b><br>Test class: com.crmAutomation.testScripts.ValidSignUpPageTest<br>Parameters: Free Edition, Mary, Abdulnss, Please select one Edition mode, , , TrePoy43, TrePoy43, APD, 76876756542, 176876756542, www.trupute.com1, compemail@treddy.com, A beautyful brand, 321, oak road , Aberdeen, Aberdeenshire, SW2 4PYJ, Ukraine, 21 Oakland</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element &lt;a href=&quot;https://classic.crmpro.com/register/&quot;&gt;...&lt;/a&gt; is not clickable at point (1172, 45). Other element would receive the click: &lt;div id=&quot;preloader&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=74.0.3729.157)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;WIN106401&apos;, ip: &apos;10.10.10.21&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 74.0.3729.157, webStorageEnabled: true}
+Session ID: 7e6969b0aef8cf136fdf89f77c48b9d2
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy22.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.crmAutomation.pageObjects.SignUpPage.clickonSignUpLink(SignUpPage.java:23)
+	at com.crmAutomation.testScripts.ValidSignUpPageTest.validateSignUpTest(ValidSignUpPageTest.java:55)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace551705591", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace551705591'><pre>org.openqa.selenium.WebDriverException: unknown error: Element &lt;a href=&quot;https://classic.crmpro.com/register/&quot;&gt;...&lt;/a&gt; is not clickable at point (1172, 45). Other element would receive the click: &lt;div id=&quot;preloader&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=74.0.3729.157)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;WIN106401&apos;, ip: &apos;10.10.10.21&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 74.0.3729.157, webStorageEnabled: true}
+Session ID: 7e6969b0aef8cf136fdf89f77c48b9d2
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at jdk.internal.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy22.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.crmAutomation.pageObjects.SignUpPage.clickonSignUpLink(SignUpPage.java:23)
+	at com.crmAutomation.testScripts.ValidSignUpPageTest.validateSignUpTest(ValidSignUpPageTest.java:55)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>com.crmAutomation.testScripts.ValidSignUpPageTest@14a50707</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.crmAutomation.testScripts.InValidSignUpCredentials.InvalidSignupContinuation()'><b>InvalidSignupContinuation</b><br>Test class: com.crmAutomation.testScripts.InValidSignUpCredentials<br>Parameters: [Yes, TC01-CompName is Blank, 
+Please enter the company name, Please enter the company name, PASS, Free Edition, Belmus, Abdulnss, Treddy4343, Treddy4343, , 76876756542, bebebehu@ghk.com, Ukraine]</td>
+<td></td>
+<td>12</td>
+<td>com.crmAutomation.testScripts.InValidSignUpCredentials@4d518b32</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.InValidSignUpCredentials.InvalidSignupContinuation()'><b>InvalidSignupContinuation</b><br>Test class: com.crmAutomation.testScripts.InValidSignUpCredentials<br>Parameters: [Yes, TC02-Comp Phone number is Blank, Please enter the phone number, Please enter the phone number, PASS, Free Edition, Belmus, Abdulnss, Treddy4343, Treddy4343, ABSD, , bebebehu@ghk.com, Uganda]</td>
+<td></td>
+<td>11</td>
+<td>com.crmAutomation.testScripts.InValidSignUpCredentials@4d518b32</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.LoginTest.LoginToApplication()'><b>LoginToApplication</b><br>Test class: com.crmAutomation.testScripts.LoginTest</td>
+<td></td>
+<td>10</td>
+<td>com.crmAutomation.testScripts.LoginTest@4bd31064</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.ValidSignUpPageTest.VerifySignUpPageURL()'><b>VerifySignUpPageURL</b><br>Test class: com.crmAutomation.testScripts.ValidSignUpPageTest</td>
+<td></td>
+<td>4</td>
+<td>com.crmAutomation.testScripts.ValidSignUpPageTest@14a50707</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.HomePageTest.VerifylogOutOfApplication()'><b>VerifylogOutOfApplication</b><br>Test class: com.crmAutomation.testScripts.HomePageTest</td>
+<td></td>
+<td>1</td>
+<td>com.crmAutomation.testScripts.HomePageTest@e3c0e40</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.InValidSignUpCredentials.signUpWithINvalidCredentialsTest()'><b>signUpWithINvalidCredentialsTest</b><br>Test class: com.crmAutomation.testScripts.InValidSignUpCredentials<br>Parameters: [Yes, TC01-No CRM EDITION SELECTED, Please select one Edition mode, Please select one Edition mode, PASS, Edition, Belmus, Abdulnss, tr34ed@try.com, tr34ed@try.com, bydy43yyu, Treddy4343, Treddy4343]</td>
+<td></td>
+<td>14</td>
+<td>com.crmAutomation.testScripts.InValidSignUpCredentials@4d518b32</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.InValidSignUpCredentials.signUpWithINvalidCredentialsTest()'><b>signUpWithINvalidCredentialsTest</b><br>Test class: com.crmAutomation.testScripts.InValidSignUpCredentials<br>Parameters: [Yes, TC02-FisrtName Field is Blank, Please enter your first name, Please enter your first name, PASS, Free Edition, , abc, tr34ed@try.com, tr34ed@try.com, bydy43yyu, Treddy4343, Treddy4343]</td>
+<td></td>
+<td>12</td>
+<td>com.crmAutomation.testScripts.InValidSignUpCredentials@4d518b32</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.InValidSignUpCredentials.signUpWithINvalidCredentialsTest()'><b>signUpWithINvalidCredentialsTest</b><br>Test class: com.crmAutomation.testScripts.InValidSignUpCredentials<br>Parameters: [Yes, TC03-LastName Field is Blank, Please enter your surname, Please enter your surname, PASS, Free Edition, abc, , tr34ed@try.com, tr34ed@try.com, bydy43yyu, Treddy4343, Treddy4343]</td>
+<td></td>
+<td>13</td>
+<td>com.crmAutomation.testScripts.InValidSignUpCredentials@4d518b32</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.InValidSignUpCredentials.signUpWithINvalidCredentialsTest()'><b>signUpWithINvalidCredentialsTest</b><br>Test class: com.crmAutomation.testScripts.InValidSignUpCredentials<br>Parameters: [Yes, TC04-EmailAddr Field is Blank, Please enter your email address, Please enter your email address, PASS, Free Edition, Atryttee, abc, , tr34ed@try.com, bydy43yyu, Treddy4343, Treddy4343]</td>
+<td></td>
+<td>12</td>
+<td>com.crmAutomation.testScripts.InValidSignUpCredentials@4d518b32</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.InValidSignUpCredentials.signUpWithINvalidCredentialsTest()'><b>signUpWithINvalidCredentialsTest</b><br>Test class: com.crmAutomation.testScripts.InValidSignUpCredentials<br>Parameters: [Yes, TC05-ConfirmEmail Field is Blank, Please confirm your email address, Please confirm your email address, PASS, Free Edition, Atryttee, Surmanaa, tr34ed@try.com, , bydy43yyu, Treddy4343, Treddy4343]</td>
+<td></td>
+<td>13</td>
+<td>com.crmAutomation.testScripts.InValidSignUpCredentials@4d518b32</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.InValidSignUpCredentials.signUpWithINvalidCredentialsTest()'><b>signUpWithINvalidCredentialsTest</b><br>Test class: com.crmAutomation.testScripts.InValidSignUpCredentials<br>Parameters: [Yes, TC06-EmailAddr is in Incorrect format, Invalid Email Address, Invalid Email Address, PASS, Free Edition, Atryttee, Surmanaa, tr34ed@, tr34ed@try.com, bydy43yyu, Treddy4343, Treddy4343]</td>
+<td></td>
+<td>12</td>
+<td>com.crmAutomation.testScripts.InValidSignUpCredentials@4d518b32</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.InValidSignUpCredentials.signUpWithINvalidCredentialsTest()'><b>signUpWithINvalidCredentialsTest</b><br>Test class: com.crmAutomation.testScripts.InValidSignUpCredentials<br>Parameters: [Yes, TC07-EmailandConfim not the same, The mail and its confirm must be the same, The mail and its confirm must be the same, PASS, Free Edition, Atryttee, Surmanaa, tr34ed@try.com, tr34ed@try, bydy43yyu, Treddy4343, Treddy4343]</td>
+<td></td>
+<td>13</td>
+<td>com.crmAutomation.testScripts.InValidSignUpCredentials@4d518b32</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.InValidSignUpCredentials.signUpWithINvalidCredentialsTest()'><b>signUpWithINvalidCredentialsTest</b><br>Test class: com.crmAutomation.testScripts.InValidSignUpCredentials<br>Parameters: [Yes, TC08-UserName Field is Blank, You must select a username, You must select a username, PASS, Free Edition, Atryttee, abc, tr34ed@try.com, tr34ed@try.com, , Treddy4343, Treddy4343]</td>
+<td></td>
+<td>13</td>
+<td>com.crmAutomation.testScripts.InValidSignUpCredentials@4d518b32</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.InValidSignUpCredentials.signUpWithINvalidCredentialsTest()'><b>signUpWithINvalidCredentialsTest</b><br>Test class: com.crmAutomation.testScripts.InValidSignUpCredentials<br>Parameters: [Yes, TC09-UserName leass than 6 xters, Username must be at least 6 characters long, Username must be at least 6 characters long, PASS, Free Edition, Atryttee, Surmanaa, tr34ed@try.com, tr34ed@try.com, byd, Treddy4343, Treddy4343]</td>
+<td></td>
+<td>12</td>
+<td>com.crmAutomation.testScripts.InValidSignUpCredentials@4d518b32</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.InValidSignUpCredentials.signUpWithINvalidCredentialsTest()'><b>signUpWithINvalidCredentialsTest</b><br>Test class: com.crmAutomation.testScripts.InValidSignUpCredentials<br>Parameters: [Yes, TC10-UserName contains special xters, The user name must not contain special characters, The user name must not contain special characters, PASS, Free Edition, Atryttee, Surmanaa, tr34ed@try.com, tr34ed@try.com, byd@+#, Treddy4343, Treddy4343]</td>
+<td></td>
+<td>13</td>
+<td>com.crmAutomation.testScripts.InValidSignUpCredentials@4d518b32</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.InValidSignUpCredentials.signUpWithINvalidCredentialsTest()'><b>signUpWithINvalidCredentialsTest</b><br>Test class: com.crmAutomation.testScripts.InValidSignUpCredentials<br>Parameters: [Yes, TC11-Password Field is Blank, You must select a password, You must select a password, PASS, Free Edition, Atryttee, abc, tr34ed@try.com, tr34ed@try.com, bydy43yyu, , Treddy4343]</td>
+<td></td>
+<td>12</td>
+<td>com.crmAutomation.testScripts.InValidSignUpCredentials@4d518b32</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.InValidSignUpCredentials.signUpWithINvalidCredentialsTest()'><b>signUpWithINvalidCredentialsTest</b><br>Test class: com.crmAutomation.testScripts.InValidSignUpCredentials<br>Parameters: [Yes, TC12-ConfirmPassword Field is Blank, You must confirm your password, You must confirm your password, PASS, Free Edition, Atryttee, Atrytteeytr, tr34ed@try.com, tr34ed@try.com, bydy43yyu, Treddy4343, ]</td>
+<td></td>
+<td>13</td>
+<td>com.crmAutomation.testScripts.InValidSignUpCredentials@4d518b32</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.InValidSignUpCredentials.signUpWithINvalidCredentialsTest()'><b>signUpWithINvalidCredentialsTest</b><br>Test class: com.crmAutomation.testScripts.InValidSignUpCredentials<br>Parameters: [Yes, TC13-pwd field is less than 6 xters, Password must be at least 6 characters long, Password must be at least 6 characters long, PASS, Free Edition, Atryttee, Atrytteeytr, tr34ed@try.com, tr34ed@try.com, bydy43yyu, Tre, Treddy4343]</td>
+<td></td>
+<td>13</td>
+<td>com.crmAutomation.testScripts.InValidSignUpCredentials@4d518b32</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.CompaniesPageTest.validateCreateCreateCompanyTest()'><b>validateCreateCreateCompanyTest</b><br>Test class: com.crmAutomation.testScripts.CompaniesPageTest<br>Parameters: [TC01, Yes, PASS, Aboki International_1, UltimatePlastic_1, 23.345.00, 1456.0, On Hold, Client, High, Email, UTiPLst_1, 324THy-2, UltimatePlastic_1, Shipping  Address, 123A Alake crescent, London SE, London, SE london, SE3 6TY, United Kingdom, A very elegant nad promising nascent plastic company, 4.4208765E7, 4.4208765E7, www.ultimateplastic_1.com, ultplastic@ultimateplasti.com, ULTPLas_1, Ultiparental_1, Ladi  moore (ladimore)]</td>
+<td></td>
+<td>43</td>
+<td>com.crmAutomation.testScripts.CompaniesPageTest@7354b8c5</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.CompaniesPageTest.validateCreateCreateCompanyTest()'><b>validateCreateCreateCompanyTest</b><br>Test class: com.crmAutomation.testScripts.CompaniesPageTest<br>Parameters: [TC02, Yes, PASS, Aboki International_2, UltimatePlastic_2, 23.345.01, 146.0, Active, Client, High, Event, UTiPLst_2, 324THy-3, UltimatePlastic_2, Billing Address, 122  Alake crescent, London SE, London, SE london, SE2 6TL, United Kingdom, A very elegant nad promising nascent plastic company, 4.4209765E7, 4.4208765E7, http://www.ultimateplastic_2.com/, ultplastic@ultimateplasti.com, ULTPLas_2, Ultiparental_2, Ladi  moore (ladimore)]</td>
+<td></td>
+<td>43</td>
+<td>com.crmAutomation.testScripts.CompaniesPageTest@7354b8c5</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.CompaniesPageTest.validateCreateCreateCompanyTest()'><b>validateCreateCreateCompanyTest</b><br>Test class: com.crmAutomation.testScripts.CompaniesPageTest<br>Parameters: [TC03, Yes, PASS, Aboki International_3, UltimatePlastic_3, 23.345.01, 1546.0, New, Partner, Low, Email, UTiPLst_2, 324THy-3, UltimatePlastic_3, Billing Address, 122  Alake crescent, London SE, London, SE london, SE2 6TL, United Kingdom, A very elegant nad promising nascent plastic company, 4.4209765E7, 4.4208765E7, http://www.ultimateplastic_2.com/, ultplastic@ultimateplasti.com, ULTPLas_2, Ultiparental_2, Ladi  moore (ladimore)]</td>
+<td></td>
+<td>40</td>
+<td>com.crmAutomation.testScripts.CompaniesPageTest@7354b8c5</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.CompaniesPageTest.validateCreateCreateCompanyTest()'><b>validateCreateCreateCompanyTest</b><br>Test class: com.crmAutomation.testScripts.CompaniesPageTest<br>Parameters: [TC04, Yes, PASS, Aboki International_4, UltimatePlastic_4, 23.345.01, 14666.0, Hot, Prospect, Medium, Referral, UTiPLst_2, 324THy-3, UltimatePlastic_4, Billing Address, 122  Alake crescent, London SE, London, SE london, SE2 6TL, United Kingdom, A very elegant nad promising nascent plastic company, 4.4209765E7, 4.4208765E7, http://www.ultimateplastic_2.com/, ultplastic@ultimateplasti.com, ULTPLas_2, Ultiparental_2, Ladi  moore (ladimore)]</td>
+<td></td>
+<td>43</td>
+<td>com.crmAutomation.testScripts.CompaniesPageTest@7354b8c5</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.ContactsPgTest.validateCreateNewContactTest()'><b>validateCreateNewContactTest</b><br>Test class: com.crmAutomation.testScripts.ContactsPgTest<br>Parameters: [TC01, Yes, Keni, KiseAre, Tuare, Aghan, Gulf Island, Accountant, Accounts, Bareowei kore, Nill Buker, Abuna tekyy]</td>
+<td></td>
+<td>7</td>
+<td>com.crmAutomation.testScripts.ContactsPgTest@329dbdbf</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.ContactsPgTest.validateCreateNewContactTest()'><b>validateCreateNewContactTest</b><br>Test class: com.crmAutomation.testScripts.ContactsPgTest<br>Parameters: [TC02, Yes, Mamu, Kilare, Dare, Kabala, Ocean stars, IT consultant, IT, BareAra Egba, Mabel Ansgt, Ladi moore]</td>
+<td></td>
+<td>7</td>
+<td>com.crmAutomation.testScripts.ContactsPgTest@329dbdbf</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.ContactsPgTest.validateCreateNewContactTest()'><b>validateCreateNewContactTest</b><br>Test class: com.crmAutomation.testScripts.ContactsPgTest<br>Parameters: [TC03, Yes, Bolo, Biri, Fayei, Sigi, Atlas Celtic, Business Analyst, Operations, Diowei, Mabel Ansgt, Ladi moore]</td>
+<td></td>
+<td>7</td>
+<td>com.crmAutomation.testScripts.ContactsPgTest@329dbdbf</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.LoginTest.validatecurrentUrlTest()'><b>validatecurrentUrlTest</b><br>Test class: com.crmAutomation.testScripts.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.crmAutomation.testScripts.LoginTest@4bd31064</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.HomePageTest.verifyHomePageTitleTest()'><b>verifyHomePageTitleTest</b><br>Test class: com.crmAutomation.testScripts.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.crmAutomation.testScripts.HomePageTest@e3c0e40</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.LoginTest.verifyHomepageTitleTest()'><b>verifyHomepageTitleTest</b><br>Test class: com.crmAutomation.testScripts.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.crmAutomation.testScripts.LoginTest@4bd31064</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.HomePageTest.verifyLoggedInUserNameTest()'><b>verifyLoggedInUserNameTest</b><br>Test class: com.crmAutomation.testScripts.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.crmAutomation.testScripts.HomePageTest@e3c0e40</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.HomePageTest.verifyclickOnContactsPgLinkTest()'><b>verifyclickOnContactsPgLinkTest</b><br>Test class: com.crmAutomation.testScripts.HomePageTest</td>
+<td></td>
+<td>1</td>
+<td>com.crmAutomation.testScripts.HomePageTest@e3c0e40</td></tr>
+</table><p>
+</body>
+</html>

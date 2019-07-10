@@ -1,0 +1,325 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>9/1/2</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Mar 04 00:27:17 GMT 2019</td>
+</tr>
+<tr><td>Total time:</td><td>816 seconds (816587 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.crmAutomation.testScripts.LoginTest.tearDown()'><b>tearDown</b><br>Test class: com.crmAutomation.testScripts.LoginTest<br>Parameters: [TestResult name=LoginToApplication status=FAILURE method=LoginTest.LoginToApplication()[pri:1, instance:com.crmAutomation.testScripts.LoginTest@bb9e6dc] output={null}]</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.crmAutomation.base.TestBase.tearDown(TestBase.java:113)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1587485260", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1587485260'><pre>java.lang.NullPointerException
+	at com.crmAutomation.base.TestBase.tearDown(TestBase.java:113)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>11</td>
+<td>com.crmAutomation.testScripts.LoginTest@bb9e6dc</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.crmAutomation.testScripts.LoginTest.setup()'><b>setup</b><br>Test class: com.crmAutomation.testScripts.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.crmAutomation.testScripts.LoginTest@bb9e6dc</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.LoginTest.setup()'><b>setup</b><br>Test class: com.crmAutomation.testScripts.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.crmAutomation.testScripts.LoginTest@bb9e6dc</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.LoginTest.tearDown()'><b>tearDown</b><br>Test class: com.crmAutomation.testScripts.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.crmAutomation.testScripts.LoginTest@bb9e6dc</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.LoginTest.tearDown()'><b>tearDown</b><br>Test class: com.crmAutomation.testScripts.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.crmAutomation.testScripts.LoginTest@bb9e6dc</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.crmAutomation.testScripts.LoginTest.LoginToApplication()'><b>LoginToApplication</b><br>Test class: com.crmAutomation.testScripts.LoginTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.crmAutomation.testScripts.LoginTest.LoginToApplication(LoginTest.java:37)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace621709074", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace621709074'><pre>java.lang.NullPointerException
+	at com.crmAutomation.testScripts.LoginTest.LoginToApplication(LoginTest.java:37)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.crmAutomation.testScripts.LoginTest@bb9e6dc</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.crmAutomation.testScripts.CompaniesPageTest.SignOutAfterLoginTest()'><b>SignOutAfterLoginTest</b><br>Test class: com.crmAutomation.testScripts.CompaniesPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.crmAutomation.testScripts.CompaniesPageTest@4dd6fd0a</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.CompaniesPageTest.validateCreateCreateCompanyTest()'><b>validateCreateCreateCompanyTest</b><br>Test class: com.crmAutomation.testScripts.CompaniesPageTest<br>Parameters: Aboki International_1, UltimatePlastic_1, 23.345.00, 1,456, On Hold, Client, High, Email, UTiPLst_1, 324THy-2, UltimatePlastic_1, Shipping  Address, 123A Alake crescent, London SE, London, SE london, SE3 6TY, United Kingdom, A very elegant nad promising nascent plastic company, 44208765, 44208765, www.ultimateplastic_1.com, ultplastic@ultimateplasti.com, ULTPLas_1, Ultiparental_1, Ladi more</td>
+<td></td>
+<td>43</td>
+<td>com.crmAutomation.testScripts.CompaniesPageTest@4dd6fd0a</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.CompaniesPageTest.validateCreateCreateCompanyTest()'><b>validateCreateCreateCompanyTest</b><br>Test class: com.crmAutomation.testScripts.CompaniesPageTest<br>Parameters: Aboki International_2, UltimatePlastic_2, 23.345.01, 146, New, Client, High, Ad, UTiPLst_2, 324THy-3, UltimatePlastic_2, Billing Address, 122  Alake crescent, London SE, London, SE london, SE2 6TL, United Kingdom, A very elegant nad promising nascent plastic company, 44209765, 44208765, http://www.ultimateplastic_2.com/, ultplastic@ultimateplasti.com, ULTPLas_2, Ultiparental_2, Ladi more</td>
+<td></td>
+<td>45</td>
+<td>com.crmAutomation.testScripts.CompaniesPageTest@4dd6fd0a</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.CompaniesPageTest.validateCreateCreateCompanyTest()'><b>validateCreateCreateCompanyTest</b><br>Test class: com.crmAutomation.testScripts.CompaniesPageTest<br>Parameters: Aboki International_3, UltimatePlastic_3, 23.345.02, 2,456, On Hold, Client, High, Call in, UTiPLst_3, 324THy-4, UltimatePlastic_3, Shipping  Address, 3. Duku Lane, London SE, London, SE london, SE21 6TB, United Kingdom, A very elegant nad promising nascent plastic company, 44206765, 44208765, www.ultimateplastic_1.com, ultplastic@ultimateplasti.com, ULTPLas_3, Ultiparental_3, Agness Bolt</td>
+<td></td>
+<td>42</td>
+<td>com.crmAutomation.testScripts.CompaniesPageTest@4dd6fd0a</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.CompaniesPageTest.validateCreateCreateCompanyTest()'><b>validateCreateCreateCompanyTest</b><br>Test class: com.crmAutomation.testScripts.CompaniesPageTest<br>Parameters: Aboki International_4, UltimatePlastic_4, 23.345.03, 4,456, Hot, Partner, Low, Internet, UTiPLst_4, 324THy-5, UltimatePlastic_4, Billing Address, 128. Dube street, London NW, Carddiff, NW london, NW43 7TR, United Kingdom, A very elegant nad promising nascent plastic company, 44773765, 44208765, www.ultimateplastic_1.com, ultplastic@ultimateplasti.com, ULTPLas_4, Ultiparental_4, Agness Bolt</td>
+<td></td>
+<td>48</td>
+<td>com.crmAutomation.testScripts.CompaniesPageTest@4dd6fd0a</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.CompaniesPageTest.validateCreateCreateCompanyTest()'><b>validateCreateCreateCompanyTest</b><br>Test class: com.crmAutomation.testScripts.CompaniesPageTest<br>Parameters: Aboki International_5, UltimatePlastic_5, 23.345.04, 1,756, Inactive, Partner, Low, Walk in, UTiPLst_5, 324THy-6, UltimatePlastic_5, Shipping  Address, 32. Ogu crescent, London NW, Carddiff, NW london, NW41 7TY, United Kingdom, A very elegant nad promising nascent plastic company, 44234765, 44208765, www.ultimateplastic_1.com, ultplastic@ultimateplasti.com, ULTPLas_5, Ultiparental_5, Fati Agu</td>
+<td></td>
+<td>46</td>
+<td>com.crmAutomation.testScripts.CompaniesPageTest@4dd6fd0a</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.CompaniesPageTest.validateCreateCreateCompanyTest()'><b>validateCreateCreateCompanyTest</b><br>Test class: com.crmAutomation.testScripts.CompaniesPageTest<br>Parameters: Aboki International_6, UltimatePlastic_6, 23.345.05, 5,756, Terminated, Partner, Low, Customer, UTiPLst_6, 324THy-7, UltimatePlastic_6, Billing Address, 123. Alake crescent, London SE, Liverpool, SE london, SE2 6TL, United Kingdom, A very elegant nad promising nascent plastic company, 44212765, 44208765, www.ultimateplastic_1.com, ultplastic@ultimateplasti.com, ULTPLas_6, Ultiparental_6, Fati Agu</td>
+<td></td>
+<td>49</td>
+<td>com.crmAutomation.testScripts.CompaniesPageTest@4dd6fd0a</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.CompaniesPageTest.validateCreateCreateCompanyTest()'><b>validateCreateCreateCompanyTest</b><br>Test class: com.crmAutomation.testScripts.CompaniesPageTest<br>Parameters: Aboki International_7, UltimatePlastic_7, 23.345.06, 2,756, Active, Prospect, Medium, Event, UTiPLst_7, 324THy-8, UltimatePlastic_7, Shipping  Address, 123. Alake crescent, London SE, Liverpool, SE london, SE2 2TL, United Kingdom, A very elegant nad promising nascent plastic company, 44379965, 44208765, www.ultimateplastic_1.com, ultplastic@ultimateplasti.com, ULTPLas_7, Ultiparental_7, fani bashiru</td>
+<td></td>
+<td>44</td>
+<td>com.crmAutomation.testScripts.CompaniesPageTest@4dd6fd0a</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.CompaniesPageTest.validateCreateCreateCompanyTest()'><b>validateCreateCreateCompanyTest</b><br>Test class: com.crmAutomation.testScripts.CompaniesPageTest<br>Parameters: Aboki International_8, UltimatePlastic_8, 23.345.07, 1,056, Active, Prospect, Medium, Referral, UTiPLst_8, 324THy-9, UltimatePlastic_8, Billing Address, 98 Eke avenue , London SE, Liverpool, SE london, SE2 6UL, United Kingdom, A very elegant nad promising nascent plastic company, 48803765, 44208765, www.ultimateplastic_1.com, ultplastic@ultimateplasti.com, ULTPLas_8, Ultiparental_8, fani bashiru</td>
+<td></td>
+<td>47</td>
+<td>com.crmAutomation.testScripts.CompaniesPageTest@4dd6fd0a</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.crmAutomation.testScripts.LoginTest.validatecurrentUrlTest()'><b>validatecurrentUrlTest</b><br>Test class: com.crmAutomation.testScripts.LoginTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.crmAutomation.base.TestBase.tearDown(TestBase.java:113)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2018683696", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2018683696'><pre>java.lang.NullPointerException
+	at com.crmAutomation.base.TestBase.tearDown(TestBase.java:113)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.crmAutomation.testScripts.LoginTest@bb9e6dc</td></tr>
+<tr>
+<td title='com.crmAutomation.testScripts.LoginTest.verifyHomepageTitleTest()'><b>verifyHomepageTitleTest</b><br>Test class: com.crmAutomation.testScripts.LoginTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.crmAutomation.base.TestBase.tearDown(TestBase.java:113)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace508881152", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace508881152'><pre>java.lang.NullPointerException
+	at com.crmAutomation.base.TestBase.tearDown(TestBase.java:113)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.crmAutomation.testScripts.LoginTest@bb9e6dc</td></tr>
+</table><p>
+</body>
+</html>

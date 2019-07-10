@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CRMAutomationLab by packages]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="com.crmAutomation.testScripts.smoketest(failed)">
+    <classes>
+      <class name="com.crmAutomation.testScripts.smoketest.LoginTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="LoginToApplication"/>
+          <include name="verifyHomepageTitleTest"/>
+          <include name="validatecurrentUrlTest"/>
+          <include name="setUpSuite"/>
+        </methods>
+      </class> <!-- com.crmAutomation.testScripts.smoketest.LoginTest -->
+    </classes>
+  </test> <!-- com.crmAutomation.testScripts.smoketest(failed) -->
+</suite> <!-- Failed suite [CRMAutomationLab by packages] -->

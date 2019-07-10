@@ -1,0 +1,1 @@
+{"uuid":"01301ff2-4297-4c54-a741-68399f9d4439","name":"Login and SignUp","children":["e8546364-ac18-4893-9978-beb42ac550ac"],"befores":[{"name":"initialization","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1562718723896,"stop":1562718738860}],"afters":[],"links":[],"start":1562718723862,"stop":1562719882000}
