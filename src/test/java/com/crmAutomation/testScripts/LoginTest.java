@@ -54,7 +54,7 @@ public class LoginTest extends TestBase {
 		logger.info("Validate current Url Test started and running********************");
 		test=extent.createTest("validatecurrentUrlTest");
 		String CurrentUrl = loginpage.ValidateCurrentUrl();
-		Assert.assertEquals(CurrentUrl, "https://classic.crmpro.com/index.html", "current URL Not matched");
+		Assert.assertEquals(CurrentUrl, "https://classic.crmpro.com/", "current URL Not matched");
 		logger.info("Validate current Url Test completed********************");
 // also consider using Assertion with log4j to get pass or fail info log
 		/*
