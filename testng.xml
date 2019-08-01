@@ -9,7 +9,8 @@
 			<class name="com.crmAutomation.testScripts.LoginTest" />
 			<class name="com.crmAutomation.testScripts.HomePageTest" />
 			<class name="com.crmAutomation.testScripts.ContactsPgTest" />
-			<class name="com.crmAutomation.testScripts.CompaniesPageTest" />
+			<!-- <class name="com.crmAutomation.testScripts.CompaniesPageTest" /> -->
+			
 		</classes>
 	</test>
 
